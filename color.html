@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New project</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="js/uikit.js"></script>
+</head>
+<body>
+<header class="head">
+</header>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+    .container {
+        display: flow-root;
+        box-sizing: content-box;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    @media screen and (min-width: 576px) {
+        .container {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .container {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        .container {
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+    }
+    .container::before, .container::after {
+        content: "";
+        display: table;
+    }
+    .container::after {
+        clear: both;
+    }
+    .container > :last-child {
+        margin-bottom: 0;
+    }
+    .container .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #select {
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        grid-gap: 16px;
+        list-style: none;
+        border: 1px solid #000;
+        padding: 24px;
+    }
+
+    #select::before {
+        content: 'Select:';
+        position: absolute;
+        left: 24px;
+        top: -12px;
+        background: white;
+        padding: 0 6px;
+    }
+
+    #select input {
+        display: none;
+    }
+
+    #select label {
+        display: block;
+        border-radius: 4px;
+        border: 1px solid slategray;
+        padding: 0 8px;
+    }
+
+    #select input:checked ~ label {
+        background: #729fcf;
+        border: 1px solid blue;
+        color: white
+    }
+
+    #red, #green, #blue {
+        float: left;
+        clear: left;
+        width: 300px;
+        margin: 15px;
+    }
+
+    #swatch {
+        width: 120px;
+        height: 100px;
+        margin-top: 18px;
+        margin-left: 350px;
+        background-image: none;
+    }
+
+    #red .ui-slider-range {
+        background: #ef2929;
+    }
+
+    #red .ui-slider-handle {
+        border-color: #ef2929;
+    }
+
+    #green .ui-slider-range {
+        background: #8ae234;
+    }
+
+    #green .ui-slider-handle {
+        border-color: #8ae234;
+    }
+
+    #blue .ui-slider-range {
+        background: #729fcf;
+    }
+
+    #blue .ui-slider-handle {
+        border-color: #729fcf;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        var flag = $("input[name='colorpicker']:checked").val();
+        function hexFromRGB(r, g, b) {
+            var hex = [
+                r.toString(16),
+                g.toString(16),
+                b.toString(16)
+            ];
+            $.each(hex, function (nr, val) {
+                if (val.length === 1) {
+                    hex[nr] = "0" + val;
+                }
+            });
+            return hex.join("").toUpperCase();
+        }
+
+        function refreshSwatch() {
+            var red = $("#red").slider("value"),
+                green = $("#green").slider("value"),
+                blue = $("#blue").slider("value"),
+                hex = hexFromRGB(red, green, blue);
+            $("#swatch").css(flag, "#" + hex);
+        }
+
+        $("#red, #green, #blue").slider({
+            orientation: "horizontal",
+            range: "min",
+            max: 255,
+            value: 127,
+            slide: refreshSwatch,
+            change: refreshSwatch
+        });
+        $("#red").slider("value", 255);
+        $("#green").slider("value", 140);
+        $("#blue").slider("value", 60);
+        $(document).ready(function () {
+            $("#select input").on('change', function () {
+                flag = this.value;
+                refreshSwatch();
+            })
+        });
+    });
+</script>
+<div class="container">
+    <ul id="select">
+        <li>
+            <input name="colorpicker" type="radio" id="change-text" value="color" >
+            <label for="change-text">color</label>
+        </li>
+        <li>
+            <input name="colorpicker" type="radio" value="background-color" id="change-background" checked>
+            <label for="change-background">backgroundColor</label>
+        </li>
+        <li>
+            <input name="colorpicker" type="radio" value="border-color" id="change-border">
+            <label for="change-border">borderColor</label>
+        </li>
+    </ul>
+    <div>
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+
+        <div id="swatch" class="ui-widget-content ui-corner-all">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
