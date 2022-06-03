@@ -5,6 +5,7 @@
             top: 0;
             bottom: 0;
             background: rgba(0, 0, 0, .5);
+            transition: all .3s ease;
         }
         .loading::before {
             content: 'Loading...';
@@ -14,4 +15,9 @@
             transform: translate(-50%, -50%);
             color: #fff;
             font-size: 20px;
+        }
+        .loading.closed {
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1;
         }</style><script defer="defer" src="index.js"></script></head><body style="padding: 0; margin: 0"><div class="loading"></div></body></html>
