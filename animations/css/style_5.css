@@ -613,12 +613,6 @@
     transform: translateY(-50%) rotate(135deg)
 }
 
-.side-menu.side-menu--main.side-menu--fixed .side-menu__button svg,
-.side-menu.side-menu--main.side-menu--opened .side-menu__button svg,
-.side-menu__list {
-    display: none
-}
-
 .side-menu__item {
     margin: 0;
     padding: 15px;
