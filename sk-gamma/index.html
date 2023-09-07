@@ -59,7 +59,7 @@
                     </div>
                     <a class="head__tel" href="tel:88002225232">8 (800) 222-52-32</a>
                 </div>
-                <button class="head__hamburger d-lg-none" type="button">
+                <button class="head__hamburger d-lg-none offcanvas-open" type="button" data-id="#offcanvas-menu">
                     <img src="img/icons/hamburger.svg" alt="">
                 </button>
             </div>
@@ -1358,6 +1358,420 @@
         </div>
     </div>
 </footer>
+
+<!-- Меню -->
+<div class="offcanvas offcanvas-multilevel" id="offcanvas-menu">
+    <ul class="offcanvas__list">
+        <li>
+            <div class="head__inner offcanvas__head">
+                <div>
+                    <a class="head__logo" href="/">
+                        <img src="img/icons/logo.svg" width="121" height="24" alt="">
+                    </a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a class="head__tel" href="tel:88002225232">8 (800) 222-52-32</a>
+                </div>
+                <button class="head__hamburger offcanvas-close" type="button" data-id="#offcanvas-menu">
+                    <img src="img/icons/close.svg" alt="">
+                </button>
+            </div>
+        </li>
+        <li>
+            <ul class="offcanvas__menu">
+                <li class="offcanvas__has-subnav">
+                    <a class="offcanvas__list-item" href="catalog.html">Покупателям</a>
+                    <ul class="offcanvas__subnav offcanvas__list">
+                        <li>
+                            <ul class="offcanvas__menu">
+                                <li><a class="offcanvas__list-item" href="#">Test</a></li>
+                                <li><a class="offcanvas__list-item" href="#">Test</a></li>
+                                <li>
+                                    <a class="offcanvas__list-item" href="#">Test</a>
+                                    <ul class="offcanvas__subnav offcanvas__list">
+                                        <li class="offcanvas__has-subnav">
+                                            <ul class="offcanvas__menu">
+                                                <li><a class="offcanvas__list-item" href="#">Test</a></li>
+                                                <li><a class="offcanvas__list-item" href="#">Test</a></li>
+                                                <li><a class="offcanvas__list-item" href="#">Test</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <div class="contact-info offcanvas__contact-info">
+                                                <div class="row g-3 align-items-center">
+                                                    <div>
+                                                        <div class="contact-info__address">г. Анапа, ул.Шевченко 288, корпус 1</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="row g-4 align-items-center">
+                                                            <div>
+                                                                <div><a class="contact-info__phone" href="#">8 (800) 222-52-32</a></div>
+                                                                <div class="fz-12 c-gray">Круглосуточно, бесплатно</div>
+                                                            </div>
+                                                            <div>
+                                                                <button class="contact-info__callback" type="button">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                                        <path d="M12.9783 10.1222C12.7171 10.0227 12.4333 9.99813 12.1589 10.0513L10.3348 10.4048C10.0096 10.4678 9.67082 10.424 9.38069 10.2641C7.93239 9.46594 6.96353 8.5447 6.34074 7.23431C6.21871 6.97754 6.19423 6.6869 6.24633 6.40741L6.60319 4.4932C6.65335 4.22412 6.62893 3.94646 6.53258 3.69027L6.07513 2.47392C5.85521 1.88917 5.29588 1.50195 4.67114 1.50195L3.38059 1.50195C2.53493 1.50195 1.86913 2.1995 2.00383 3.03436C2.30796 4.91947 3.15546 8.15751 5.4999 10.502C7.96252 12.9646 11.4777 14.074 13.5207 14.537C14.3926 14.7346 15.1666 14.0534 15.1666 13.1594L15.1666 11.9897C15.1666 11.3674 14.7823 10.8097 14.2007 10.588L12.9783 10.1222Z" fill="black"/>
+                                                                    </svg>
+                                                                    <span class="ms-2">Заказать звонок</span>
+                                                                </button>
+                                                            </div>
+                                                            <div>
+                                                                <ul class="contact-info__socials">
+                                                                    <li>
+                                                                        <a class="contact-info__social" href="#">
+                                                                            <img src="img/icons/whatsapp.png" width="18" height="18" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="contact-info__social" href="#">
+                                                                            <img src="img/icons/od.png" width="18" height="18" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="contact-info__social" href="#">
+                                                                            <img src="img/icons/vk.png" width="18" height="18" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="contact-info__social" href="#">
+                                                                            <img src="img/icons/youtube.png" width="18" height="18" alt="">
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="offcanvas__list-item" href="#">Test</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="contact-info offcanvas__contact-info">
+                                <div class="row g-3 align-items-center">
+                                    <div>
+                                        <div class="contact-info__address">г. Анапа, ул.Шевченко 288, корпус 1</div>
+                                    </div>
+                                    <div>
+                                        <div class="row g-4 align-items-center">
+                                            <div>
+                                                <div><a class="contact-info__phone" href="#">8 (800) 222-52-32</a></div>
+                                                <div class="fz-12 c-gray">Круглосуточно, бесплатно</div>
+                                            </div>
+                                            <div>
+                                                <button class="contact-info__callback" type="button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                        <path d="M12.9783 10.1222C12.7171 10.0227 12.4333 9.99813 12.1589 10.0513L10.3348 10.4048C10.0096 10.4678 9.67082 10.424 9.38069 10.2641C7.93239 9.46594 6.96353 8.5447 6.34074 7.23431C6.21871 6.97754 6.19423 6.6869 6.24633 6.40741L6.60319 4.4932C6.65335 4.22412 6.62893 3.94646 6.53258 3.69027L6.07513 2.47392C5.85521 1.88917 5.29588 1.50195 4.67114 1.50195L3.38059 1.50195C2.53493 1.50195 1.86913 2.1995 2.00383 3.03436C2.30796 4.91947 3.15546 8.15751 5.4999 10.502C7.96252 12.9646 11.4777 14.074 13.5207 14.537C14.3926 14.7346 15.1666 14.0534 15.1666 13.1594L15.1666 11.9897C15.1666 11.3674 14.7823 10.8097 14.2007 10.588L12.9783 10.1222Z" fill="black"/>
+                                                    </svg>
+                                                    <span class="ms-2">Заказать звонок</span>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <ul class="contact-info__socials">
+                                                    <li>
+                                                        <a class="contact-info__social" href="#">
+                                                            <img src="img/icons/whatsapp.png" width="18" height="18" alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="contact-info__social" href="#">
+                                                            <img src="img/icons/od.png" width="18" height="18" alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="contact-info__social" href="#">
+                                                            <img src="img/icons/vk.png" width="18" height="18" alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="contact-info__social" href="#">
+                                                            <img src="img/icons/youtube.png" width="18" height="18" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="offcanvas__has-subnav">
+                    <a class="offcanvas__list-item" href="catalog.html">Жилые комплексы</a>
+                    <ul class="offcanvas__subnav offcanvas__list">
+                        <li>
+                            <ul class="offcanvas__menu offcanvas__menu_housing">
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">Все объекты</div>
+                                                <div class="offcanvas__housing-item-subtitle">24 проекта</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный» Центральный ЦентральныйЦентральный Центральный</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="offcanvas__housing-item" href="#">
+                                        <div class="offcanvas__housing-item-img">
+                                            <img src="img/stories.jpg" alt="" />
+                                        </div>
+                                        <div class="offcanvas__housing-item-info">
+                                            <div>
+                                                <div class="offcanvas__housing-item-title">ЖК «Центральный»</div>
+                                                <div class="offcanvas__housing-item-subtitle">г. Новороссийск</div>
+                                            </div>
+                                            <div class="fw-medium">от 11.5 млн ₽</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="contact-info offcanvas__contact-info">
+                                <div class="row g-3 align-items-center">
+                                    <div>
+                                        <div class="contact-info__address">г. Анапа, ул.Шевченко 288, корпус 1</div>
+                                    </div>
+                                    <div>
+                                        <div class="row g-4 align-items-center">
+                                            <div>
+                                                <div><a class="contact-info__phone" href="#">8 (800) 222-52-32</a></div>
+                                                <div class="fz-12 c-gray">Круглосуточно, бесплатно</div>
+                                            </div>
+                                            <div>
+                                                <button class="contact-info__callback" type="button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                        <path d="M12.9783 10.1222C12.7171 10.0227 12.4333 9.99813 12.1589 10.0513L10.3348 10.4048C10.0096 10.4678 9.67082 10.424 9.38069 10.2641C7.93239 9.46594 6.96353 8.5447 6.34074 7.23431C6.21871 6.97754 6.19423 6.6869 6.24633 6.40741L6.60319 4.4932C6.65335 4.22412 6.62893 3.94646 6.53258 3.69027L6.07513 2.47392C5.85521 1.88917 5.29588 1.50195 4.67114 1.50195L3.38059 1.50195C2.53493 1.50195 1.86913 2.1995 2.00383 3.03436C2.30796 4.91947 3.15546 8.15751 5.4999 10.502C7.96252 12.9646 11.4777 14.074 13.5207 14.537C14.3926 14.7346 15.1666 14.0534 15.1666 13.1594L15.1666 11.9897C15.1666 11.3674 14.7823 10.8097 14.2007 10.588L12.9783 10.1222Z" fill="black"/>
+                                                    </svg>
+                                                    <span class="ms-2">Заказать звонок</span>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <ul class="contact-info__socials">
+                                                    <li>
+                                                        <a class="contact-info__social" href="#">
+                                                            <img src="img/icons/whatsapp.png" width="18" height="18" alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="contact-info__social" href="#">
+                                                            <img src="img/icons/od.png" width="18" height="18" alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="contact-info__social" href="#">
+                                                            <img src="img/icons/vk.png" width="18" height="18" alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="contact-info__social" href="#">
+                                                            <img src="img/icons/youtube.png" width="18" height="18" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a class="offcanvas__list-item" href="catalog.html">Реквизиты</a>
+                </li>
+                <li>
+                    <a class="offcanvas__list-item head__online" href="#"><span>Онлайн камеры</span></a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div class="contact-info offcanvas__contact-info">
+                <div class="row g-3 align-items-center">
+                    <div>
+                        <div class="contact-info__address">г. Анапа, ул.Шевченко 288, корпус 1</div>
+                    </div>
+                    <div>
+                        <div class="row g-4 align-items-center">
+                            <div>
+                                <div><a class="contact-info__phone" href="#">8 (800) 222-52-32</a></div>
+                                <div class="fz-12 c-gray">Круглосуточно, бесплатно</div>
+                            </div>
+                            <div>
+                                <button class="contact-info__callback" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <path d="M12.9783 10.1222C12.7171 10.0227 12.4333 9.99813 12.1589 10.0513L10.3348 10.4048C10.0096 10.4678 9.67082 10.424 9.38069 10.2641C7.93239 9.46594 6.96353 8.5447 6.34074 7.23431C6.21871 6.97754 6.19423 6.6869 6.24633 6.40741L6.60319 4.4932C6.65335 4.22412 6.62893 3.94646 6.53258 3.69027L6.07513 2.47392C5.85521 1.88917 5.29588 1.50195 4.67114 1.50195L3.38059 1.50195C2.53493 1.50195 1.86913 2.1995 2.00383 3.03436C2.30796 4.91947 3.15546 8.15751 5.4999 10.502C7.96252 12.9646 11.4777 14.074 13.5207 14.537C14.3926 14.7346 15.1666 14.0534 15.1666 13.1594L15.1666 11.9897C15.1666 11.3674 14.7823 10.8097 14.2007 10.588L12.9783 10.1222Z" fill="black"/>
+                                    </svg>
+                                    <span class="ms-2">Заказать звонок</span>
+                                </button>
+                            </div>
+                            <div>
+                                <ul class="contact-info__socials">
+                                    <li>
+                                        <a class="contact-info__social" href="#">
+                                            <img src="img/icons/whatsapp.png" width="18" height="18" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="contact-info__social" href="#">
+                                            <img src="img/icons/od.png" width="18" height="18" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="contact-info__social" href="#">
+                                            <img src="img/icons/vk.png" width="18" height="18" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="contact-info__social" href="#">
+                                            <img src="img/icons/youtube.png" width="18" height="18" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 
 <script src="js/swiper.js"></script>
 <script src="js/main.js"></script>
