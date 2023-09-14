@@ -739,8 +739,7 @@
                                 <div class="main-slide__info">
                                     <div class="main-slide__title">ЖК «18/3» 1</div>
                                     <div class="main-slide__more">
-                                        <span class="me-1 d-none d-sm-block">Подробнее</span>
-                                        <span class="d-sm-none">О проекте</span>
+                                        <span class="me-1">Подробнее</span>
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M6.5 13.668L12 8.16797L6.5 2.66797" stroke="#fff" stroke-linecap="square"/>
                                         </svg>
@@ -753,8 +752,7 @@
                                 <div class="main-slide__info">
                                     <div class="main-slide__title">ЖК «18/3» 2</div>
                                     <div class="main-slide__more">
-                                        <span class="me-1 d-none d-sm-block">Подробнее</span>
-                                        <span class="d-sm-none">О проекте</span>
+                                        <span class="me-1">Подробнее</span>
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M6.5 13.668L12 8.16797L6.5 2.66797" stroke="#fff" stroke-linecap="square"/>
                                         </svg>
@@ -767,8 +765,7 @@
                                 <div class="main-slide__info">
                                     <div class="main-slide__title">ЖК «18/3» 3</div>
                                     <div class="main-slide__more">
-                                        <span class="me-1 d-none d-sm-block">Подробнее</span>
-                                        <span class="d-sm-none">О проекте</span>
+                                        <span class="me-1">Подробнее</span>
                                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M6.5 13.668L12 8.16797L6.5 2.66797" stroke="#fff" stroke-linecap="square"/>
                                         </svg>
@@ -1642,7 +1639,7 @@
     <div class="container">
         <div class="h1">Наши преимущества</div>
         <div class="row g-3 g-lg-4">
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-none d-lg-block">
                 <div class="advantage-img">
                     <img src="img/advantages.png" width="384" height="481" alt="">
                 </div>
@@ -2455,8 +2452,14 @@
             </div>
             <form action="">
                 <div class="mb-6">
-                    <label class="mb-1 d-block" for="phone">Номер телефона</label>
-                    <input class="input" id="phone" type="text">
+                    <div class="mb-3">
+                        <label class="mb-1 d-block" for="name">ФИО</label>
+                        <input class="input" id="name" type="text">
+                    </div>
+                    <div>
+                        <label class="mb-1 d-block" for="phone">Номер телефона</label>
+                        <input class="input" id="phone" type="text">
+                    </div>
                 </div>
                 <div>
                     <button class="button w-100">Записаться</button>
